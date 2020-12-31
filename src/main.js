@@ -14,6 +14,18 @@ import 'element-ui/lib/theme-chalk/index.css'
 // 加载全局样式
 import './styles/index.less'
 
+// import JSONBIg from 'json-bigint'
+
+// const str = '{"id":13234232323232323232}'
+
+// console.log(JSON.parse(str))
+// console.log(JSONBIg.parse(str)) 将超出范围的大数据通过BigNumber.toString()得到原来正确的数据
+
+// // JSON.parse()
+// JSONBIg.parse()
+// // JSON.stringify()
+// JSONBIg.stringify()
+
 // 全局注册element的组件库
 Vue.use(ElementUI)
 

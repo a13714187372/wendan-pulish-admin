@@ -14,15 +14,16 @@ export const login = data => {
 }
 // 获取用户信息
 export const getUserProfile = () => {
+  // const user = window.localStorage.getItem('user')
   return request({
     menthod: 'GET',
-    url: '/mp/v1_0/user/profile',
+    url: '/mp/v1_0/user/profile'
     // axios可以通过 headers 选项设置请求头
-    headers: {
-    // 属性名和值都得看接口的要求
-    // 属性名 Authorization 接口要求
-    // 属性值 Bearer空格
-      Authorization: 'Bearer '
-    }
+    // headers: {
+    // // 属性名和值都得看接口的要求
+    // // 属性名 Authorization 接口要求
+    // // 属性值 Bearer空格
+    //   Authorization: 'Bearer ' + user.token
+    // }
   })
 }
